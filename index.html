@@ -10,10 +10,21 @@
     <!-- 웹폰트 : 프리텐다드 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
 
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- 스타일시트 -->
     <!-- 리셋 --><link rel="stylesheet" href="./styles/reset.css">
     <!-- 커먼 --><link rel="stylesheet" href="./styles/common.css">
     <!-- 개별 --><link rel="stylesheet" href="./styles/index.css">
+
+    <!-- 스크립트 -->
+    <!-- 스와이퍼 --><script src="./scripts/swiper.js" defer></script>
+    <!-- 개별 --><script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -57,14 +68,152 @@
 
         <!-- 메인================================================ -->
         <main>
+            <!-- 신상================================================ -->
             <section class="row2"></section>
-            <section class="row3"></section>
+
+            <!-- 광고================================================ -->
+            <section class="ad">
+                <div class="container">
+                    <div class="swiper" id="ad_bnr">
+                        <!--필수-->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1"><img src="./images/bnr.png" alt="광고 바로가기"></div>
+                            <div class="swiper-slide slide2"><img src="./images/bnr.png" alt="광고 바로가기"></div>
+                            <div class="swiper-slide slide3"><img src="./images/bnr.png" alt="광고 바로가기"></div>
+                        </div>
+                        <!--필요 시 사용(선택)-->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-controls">
+                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 세일================================================ -->
+            <section class="row3">
+                <div class="container">
+                    <a href="#" class="left">
+                        <em>PRODUCT 20%~</em>
+                        <span>Details</span>
+                    </a>
+                    <a href="#" class="right">
+                        <em>GIFT</em>
+                        <span>Details</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 콜렉션================================================ -->
             <section class="row4"></section>
-            <section class="row5"></section>
-            <section class="row6"></section>
-            <section class="row7"></section>
-            <section class="row8"></section>
-            <section class="row9"></section>
+
+            <!-- 브랜드 소개================================================ -->
+            <section class="row5">
+                <div class="container">
+                    <a href="#">
+                        <em>seoul based kids wear and accessory brand</em>
+                    </a>
+                </div>
+            </section>
+
+            
+            <!-- 가맹사업================================================ -->
+            <section class="row6">
+                <div class="container">
+                    <div class="left">
+                        <div class="top">
+                            <h1>가깝고 친절하게</h1>
+                            <p>베베드피노 무드의 감성을 매장에서 직접 보고 느껴보세요.</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="#">Visit store</a>
+                            <span>현재 위치에서 가장 가까운 매장을 만나보세요.</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <!-- bg -->
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 인스타================================================ -->
+            <section class="row7">
+                <div class="container">
+                    <div class="title">
+                        <a href="#">@bebedepino</a>
+                        <h1><img src="./images/Follow us.png" alt=""></h1>
+                    </div>
+                    <div class="contents">
+                        <div class="swiper" id="insta">
+                            <!--필수-->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1"><img src="./images/row9-001.png" alt=""></div>
+                                <div class="swiper-slide slide2"><img src="./images/row9-002.png" alt=""></div>
+                                <div class="swiper-slide slide3"><img src="./images/row9-003.png" alt=""></div>
+                                <div class="swiper-slide slide4"><img src="./images/row9-004.png" alt=""></div>
+                                <div class="swiper-slide slide5"><img src="./images/row9-005.png" alt=""></div>
+                                <div class="swiper-slide slide6"><img src="./images/row9-006.png" alt=""></div>
+                                <div class="swiper-slide slide7"><img src="./images/row9-001.png" alt=""></div>
+                                <div class="swiper-slide slide8"><img src="./images/row9-002.png" alt=""></div>
+                                <div class="swiper-slide slide9"><img src="./images/row9-003.png" alt=""></div>
+                                <div class="swiper-slide slide10"><img src="./images/row9-004.png" alt=""></div>
+                                <div class="swiper-slide slide11"><img src="./images/row9-005.png" alt=""></div>
+                                <div class="swiper-slide slide12"><img src="./images/row9-006.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 혜택================================================ -->
+            <section class="row8">
+                <div class="container">
+                    <a href="#">
+                        <span class="left">
+                            <em><img src="./images/row10-1.png" alt=""></em>
+                            <span class="txt">
+                                <em>Free delivery</em>
+                                <span>within 3 days</span>
+                            </span>
+                        </span>
+                        <img src="./images/row10icon.png" alt="">
+                    </a>
+                    <a href="#">
+                        <span class="left">
+                            <em><img src="./images/row10-2.png" alt=""></em>
+                            <span class="txt">
+                                <em>Gift wrapping </em>
+                                <span>options to choose</span>
+                            </span>
+                        </span>
+                        <img src="./images/row10icon.png" alt="">
+                    </a>
+                    <a href="#">
+                        <span class="left">
+                            <em><img src="./images/row10-3.png" alt=""></em>
+                            <span class="txt">
+                                <em>World wide shipping</em>
+                                <span>210 countries</span>
+                            </span>
+                        </span>
+                        <img src="./images/row10icon.png" alt="">
+                    </a>
+                </div>
+            </section>
+            <!-- 공지사항================================================ -->
+            <section class="row9">
+                <div class="container">
+                    <div class="left">
+                        <em>공지사항</em>
+                        <img src="./images/arrow_drop_down_circle.png" alt="">
+                        <a href="#">베베드피노 멤버십 혜택 안내</a>
+                    </div>
+                    <a href="#">전체보기</a>
+                </div>
+            </section>
         </main>
 
         <!-- 풋터================================================ -->

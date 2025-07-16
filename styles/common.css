@@ -56,12 +56,12 @@
 /* 풋터=================================================================================================== */
 #wrap footer {}
 #wrap footer .container {
-    max-width: 100%; min-width: 430px;  padding: 70px 0 0; margin: 0 auto; 
+    max-width: 100%; min-width: 430px;  padding: 70px 0 0 0; margin: 0 auto; 
     display: flex; flex-flow: column nowrap; gap: 50px; justify-content: space-between; align-items: flex-start;
     background-color: #1A1A1A;
 }
 #wrap footer .container * {color: #fff;}
-#wrap footer .container .top {width: 1480px; margin: 0 auto; display: flex; flex-flow: column nowrap; gap: 30px;}
+#wrap footer .container .top {width: 77%; margin: 0 auto; display: flex; flex-flow: column nowrap; gap: 30px;}
 #wrap footer .container .top .row1 {display: flex; flex-flow: column nowrap; gap: 50px;}
 #wrap footer .container .top .row1 .logo_menu {display: flex; justify-content: space-between; align-items: center;}
 #wrap footer .container .top .row1 .logo_menu h1 {}
@@ -78,7 +78,7 @@
 }
 #wrap footer .container .top .row1 .pri a:last-of-type::after {display: none;}
 #wrap footer .container .top .row1 .pri a:nth-of-type(2) {font-weight: 500;}
-#wrap footer .container .top .row2 {display: flex; flex-flow: column nowrap; gap: 10px;}
+#wrap footer .container .top .row2 {display: flex; flex-flow: column nowrap; gap: 10px; width: 77%;}
 #wrap footer .container .top .row2 p {display: flex; align-items: center;}
 #wrap footer .container .top .row2 p span {font-size: 0.875rem; display: flex; align-items: center;}
 #wrap footer .container .top .row2 p span::after {
@@ -88,7 +88,7 @@
 }
 #wrap footer .container .top .row2 p span:last-of-type::after {display: none;}
 #wrap footer .container .top .row2 p a {font-size: 0.875rem;}
-#wrap footer .container .row3 {width: 1480px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+#wrap footer .container .row3 {width: 1480px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; width: 77%;}
 #wrap footer .container .row3 p {font-size: 0.75rem;}
 #wrap footer .container .row3 em {font-weight: 500;}
 #wrap footer .container .row3 p a {}
