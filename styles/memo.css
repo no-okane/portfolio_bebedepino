@@ -1,0 +1,23 @@
+/* 신상========================================================================= */
+#wrap main .row2 {}
+#wrap main .row2 .container {
+    max-width: 1480px; min-width: 430px; margin: 0 auto; padding: 70px 0px 70px;
+    display: flex; justify-content: space-between; align-items: center; flex-flow: column nowrap; gap: 60px;
+    position: relative;
+}
+#wrap main .row2 .container .top {display: flex; flex-flow: column nowrap; gap: 20px; align-items: center; justify-content: center;}
+#wrap main .row2 .container .top p {color: #888888;}
+#wrap main .row2 .container .contents {width: 100%;}
+#wrap main .row2 .container .contents * {overflow: visible;}
+#wrap main .row2 .container .contents #new_product {}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper {}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide {display: flex; justify-content: space-between; align-items: center;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product {width: 345px; display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: flex-start; gap: 20px;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product > a {width: 100%; height: 460px; background: #F5F5F5; display: flex; justify-content: center; align-items: center;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product > a img {}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt {display: flex; flex-flow: column nowrap; justify-self: flex-start; align-items: flex-start; gap: 10px;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt a {color: #888888; font-size: 0.875rem;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price {display: flex; gap: 5px; align-items: baseline;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price em {color: #E72819; font-weight: 500;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price span {font-size: 0.875rem;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price del {font-size: 0.75rem; color: #B9B9B9;}

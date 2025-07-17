@@ -3,42 +3,103 @@ body * {transition: all 0.3s; overflow: hidden;}
 #wrap {min-height: 100vh; overflow: hidden;}
 /* max-width: 1480px; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 160px 0 80px; */
 
+/* 콜렉션========================================================================= */
+#wrap main .row2 {}
+#wrap main .row2 .container {
+    max-width: 1480px; min-width: 430px; margin: 0 auto; padding: 70px 0px 70px;
+    display: flex; justify-content: space-between; align-items: center; flex-flow: column nowrap; gap: 60px;
+    position: relative;
+}
+#wrap main .row2 .container .top {display: flex; flex-flow: column nowrap; gap: 20px; align-items: center; justify-content: center;}
+#wrap main .row2 .container .top p {color: #888888;}
+#wrap main .row2 .container .contents {width: 100%;}
+#wrap main .row2 .container .contents * {overflow: visible;}
+#wrap main .row2 .container .contents #new_product {margin-bottom: 60px;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper {}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide {display: flex; justify-content: space-between; align-items: center;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product {width: 345px; display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: flex-start; gap: 20px;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product > a {width: 100%; height: 460px; background: #F5F5F5; display: flex; justify-content: center; align-items: center;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product > a img {}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt {display: flex; flex-flow: column nowrap; justify-self: flex-start; align-items: flex-start; gap: 10px;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt a {color: #888888; font-size: 0.875rem;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price {display: flex; gap: 5px; align-items: baseline;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price em {color: #E72819; font-weight: 500;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price span {font-size: 0.875rem; font-weight: 500;}
+#wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price del {font-size: 0.75rem; color: #B9B9B9;}
+
+#wrap main .row2 .swiper-controls * {font-size: 0.875rem; overflow: visible; position: relative;}
+#wrap main .row2 .swiper-controls {
+    display: flex; justify-content: center; align-items: center; gap: 40px;
+    width: 100%; height: 30px; bottom: 0px;
+}
+#wrap main .row2 .swiper-controls .swiper-scrollbar {width: 40%; height: 4px; margin-top: 11px;}
+
+#wrap main .row2 .swiper-controls .pagination_deco * {}
+#wrap main .row2 .swiper-controls .pagination_deco {display: flex; align-items: center; gap: 10px;}
+#wrap main .row2 .swiper-controls .swiper-pagination {padding: 15px 0 0 0;}
+#wrap main .row2 .swiper-controls .pagination_deco p {}
+#wrap main .row2 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {}
+#wrap main .row2 .swiper-controls .swiper-pagination .swiper-pagination-total {color: #B9B9B9; }
+#wrap main .row2  .swiper-scrollbar .swiper-scrollbar-horizontal {}
+
+
 /* 광고========================================================================= */
 #wrap main .ad {display: flex; justify-content: space-between; align-items: center;}
 #wrap main .ad .container {
-    max-width: 100%; min-width: 430px; margin: 0 auto; padding: 70px 0px; background-color: aqua;
+    max-width: 100%; min-width: 430px; margin: 0 auto; padding: 70px 0px;
+    display: flex; flex-flow: column nowrap; gap: 60px;
     position: relative;
 }
 #wrap main .ad .container * {overflow: visible;}
 #wrap main .ad .container #ad_bnr {width: 100%;}
-#wrap main .ad .container #ad_bnr .swiper-slide {height: 280px;}
-#wrap main .ad .container .swiper-scrollbar {/* background-color: yellow; bottom: 0; height: 5px; width: 1000px; */}
-#wrap main .ad .container .swiper-paginaton {background-color: yellow;}
+#wrap main .ad .container #ad_bnr .swiper-slide {min-height: 280px;}
+#wrap main .ad .container .swiper-scrollbar {}
 #wrap main .ad .container .swiper-button-prev,
-#wrap main .ad .container .swiper-button-next {color: #ffffff; }
+#wrap main .ad .container .swiper-button-next {color: #ffffff; width: 70px;}
 .swiper {--swiper-navigation-size: 24px;}
-.ad .swiper-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;  /* 세로 정렬 */
-    width: 100%;  /* 가로로 꽉 채우기 */
-    height: 60px;
-    position: absolute;  /* 부모 스와이퍼 안에서 고정 */
-    bottom: 20px; 
-    background-color: yellow;
+#wrap main .ad .swiper-controls * {font-size: 0.875rem; overflow: visible; position: relative;}
+#wrap main .ad .swiper-controls {
+    display: flex; justify-content: center; align-items: center; gap: 40px;
+    width: 100%; height: 30px; bottom: 0px; 
 }
-.ad .swiper-controls .swiper-scrollbar {
-    background-color: cornflowerblue; width: 80%;
-    transform: translate(10%, 0%);
+#wrap main .ad .swiper-controls .swiper-scrollbar {width: 80%; height: 4px; margin-top: 11px;}
+#wrap main .ad .swiper-controls .swiper-pagination {padding: 15px 0 0 0;}
+#wrap main .ad .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {}
+#wrap main .ad .swiper-controls .swiper-pagination .swiper-pagination-total {color: #B9B9B9;}
+
+#wrap main .ad .swiper-controls .pagination_deco * {}
+#wrap main .ad .swiper-controls .pagination_deco {display: flex; align-items: center; gap: 10px; }
+#wrap main .ad_bnr .swiper-scrollbar .swiper-scrollbar-horizontal {}
+
+/* 신상========================================================================= */
+#wrap main .new {}
+#wrap main .new .container {
+    max-width: 1480px; min-width: 430px; margin: 0 auto; padding: 140px 0px 70px;
+    display: flex; flex-flow: column nowrap; justify-content: center;  align-items: center; gap: 60px;
 }
-.ad .swiper-controls .swiper-pagination {background: pink; width: max-content;}
-.swiper-scrollbar{}
-.swiper-scrollbar .swiper-scrollbar-horizontal {}
+#wrap main .new .container .title {display: flex; flex-flow: column nowrap; gap: 20px; align-items: center; justify-content: center;}
+#wrap main .new .container .title a {color: #888888;}
+#wrap main .new .container .title h1 {}
+#wrap main .new .container .title h1 img {}
+#wrap main .new .container .contents {width: 100%; display: flex; justify-content: space-between; align-items: flex-start;}
+#wrap main .new .container .contents .left {width: 472px;}
+#wrap main .new .container .contents .right {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; justify-content: space-between; width: 978px; gap: 50px 30px;}
+#wrap main .new .container .contents .right .product {
+    width: 222px; height: 361px;
+    display: flex; flex-flow: column nowrap; align-items: flex-start; gap: 20px; 
+}
+#wrap main .new .container .contents .right .product .txt {display: flex; flex-flow: column nowrap; gap: 10px;}
+#wrap main .new .container .contents .right .product .txt a {font-size: 0.875rem; color: #888888;}
+#wrap main .new .container .contents .right .product .txt .price {display: flex; gap: 5px; align-items: baseline;}
+#wrap main .new .container .contents .right .product .txt .price em {color: #E72819; font-weight: 500;}
+#wrap main .new .container .contents .right .product .txt .price span {font-size: 0.875rem; font-weight: 500;}
+#wrap main .new .container .contents .right .product .txt .price del {color: #B9B9B9; font-size: 0.75rem;}
+
 
 /* 세일========================================================================= */
 #wrap main .row3 {}
 #wrap main .row3 .container {
-    max-width: 100%; min-width: 430px; margin: 0 auto; padding: 70px 0px;
+    max-width: 100%; min-width: 430px; margin: 0 auto; padding: 140px 0px 70px;
     display: grid; grid-template-columns: 1fr 1fr; justify-content: space-between; align-items: center;
 }
 #wrap main .row3 .container .left {background: url(../images/row3-001.png) no-repeat center / cover;}
