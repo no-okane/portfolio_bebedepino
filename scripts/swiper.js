@@ -40,3 +40,17 @@ const adBnr = new Swiper ('#ad_bnr',{
         clickable: true,
     },
 })
+
+
+const collabor = new Swiper ('#collabor',{
+    loop:true,
+    spaceBetween:30,slidesPerView : 6,
+    scrollbar:{
+        el:'#collabor + .swiper-controls .swiper-scrollbar'
+    },
+    pagination: {
+        el: "#collabor + .swiper-controls .pagination_deco .swiper-pagination",
+        type: "fraction",
+        clickable: true,
+    },
+})

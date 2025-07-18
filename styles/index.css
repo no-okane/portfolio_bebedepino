@@ -110,6 +110,49 @@ body * {transition: all 0.3s; overflow: hidden;}
 #wrap main .row3 .container > a span {border-radius: 50px; border: 1px solid #fff; padding: 10px 30px; color: #fff;}
 .swiper-scrollbar-drag {background-color: #E72819;}
 
+/* 콜라보========================================================================= */
+#wrap main .row4 {}
+#wrap main .row4 .container {
+    max-width: 100%; min-width: 430px; margin: 0 auto; padding: 70px 0px 140px;
+    display: flex; justify-content: center; gap: 00px;
+    position: relative;
+}
+#wrap main .row4 .container * {}
+#wrap main .row4 .container .left {
+    display: flex; flex-flow: column nowrap; gap: 20px; align-items: flex-start; justify-content: space-between;
+    width: 622px; height: 516px;
+}
+#wrap main .row4 .container .left .title {display: flex; flex-flow: column nowrap; gap: 20px; align-items: flex-start; justify-content: space-between;}
+#wrap main .row4 .container .left p {color: #888888;}
+#wrap main .row4 .container .left h1 {}
+#wrap main .row4 .container .left h1 img {}
+#wrap main .row4 .container .left a {border-radius: 50px; background: #000; color: #fff; padding: 10px 40px; width: max-content;}
+#wrap main .row4 .container .left a:hover {background: rgb(0, 0, 0, 0.9);}
+
+#wrap main .row4 .container .right {width: 1138px;}
+#wrap main .row4 .container .right #collabor {position: absolute; width: 100%; height: 420px;}
+#wrap main .row4 .container .right #collabor .swiper-wrapper {display: flex;}
+#wrap main .row4 .container .right #collabor .swiper-wrapper .swiper-slide {}
+#wrap main .row4 .container .right #collabor .swiper-wrapper .swiper-slide a {}
+#wrap main .row4 .container .right #collabor .swiper-wrapper .swiper-slide a img {}
+
+#wrap main .row4 .swiper-controls * {font-size: 0.875rem; overflow: visible; position: relative; bottom: -47%;}
+#wrap main .row4 .swiper-controls {
+    display: flex; justify-content: center; align-items: center; gap: 40px;
+    width: 100%; height: 516px;
+}
+#wrap main .row4 .swiper-controls .swiper-scrollbar {width: 80%; height: 4px; margin-top: 18px;}
+#wrap main .row4 .swiper-controls .swiper-pagination {padding: 15px 0 0 0;}
+#wrap main .row4 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {}
+#wrap main .row4 .swiper-controls .swiper-pagination .swiper-pagination-total {color: #B9B9B9;}
+
+#wrap main .row4 .swiper-controls .pagination_deco * {}
+#wrap main .row4 .swiper-controls .pagination_deco {display: flex; align-items: center; gap: 10px;}
+#wrap main .row4 .swiper-controls .pagination_deco p {padding: 15px 0 0 0;}
+#wrap main .row4 .swiper-scrollbar .swiper-scrollbar-horizontal {}
+#wrap main .row4 .swiper-scrollbar-drag {background-color: #E72819;}
+
+
 /* 브랜드 소개========================================================================= */
 #wrap main .row5 {}
 #wrap main .row5 .container {
@@ -121,6 +164,7 @@ body * {transition: all 0.3s; overflow: hidden;}
     display: flex; align-items: center; justify-content: center;
 }
 #wrap main .row5 .container a em {text-transform: uppercase; font-size: 1.875rem; font-weight: 500; text-align: center; color: #fff;}
+
 
 /* 가맹사업========================================================================= */
 #wrap main .row6 {}
