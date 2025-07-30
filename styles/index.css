@@ -125,6 +125,7 @@ body * {transition: all 0.3s; overflow: hidden;}
 #wrap main .row4 .container .left .title {display: flex; flex-flow: column nowrap; gap: 20px; align-items: flex-start; justify-content: space-between;}
 #wrap main .row4 .container .left p {color: #888888;}
 #wrap main .row4 .container .left h1 {}
+#wrap main .row4 .container .left h1:last-of-type {display: none;}
 #wrap main .row4 .container .left h1 img {}
 #wrap main .row4 .container .left a {border-radius: 50px; background: #000; color: #fff; padding: 10px 40px; width: max-content;}
 #wrap main .row4 .container .left a:hover {background: rgb(0, 0, 0, 0.9);}
