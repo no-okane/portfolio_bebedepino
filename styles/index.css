@@ -78,7 +78,7 @@ body * {transition: all 0.3s; overflow: hidden;}
     display: flex; flex-flow: column nowrap; justify-content: center;  align-items: center; gap: 60px;
 }
 #wrap main .new .container .title {display: flex; flex-flow: column nowrap; gap: 20px; align-items: center; justify-content: center;}
-#wrap main .new .container .title a {color: #888888;}
+#wrap main .new .container .title p {color: #888888;}
 #wrap main .new .container .title h1 {}
 #wrap main .new .container .title h1 img {}
 #wrap main .new .container .contents {width: 100%; display: flex; justify-content: space-between; align-items: flex-start;}

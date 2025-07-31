@@ -3,7 +3,7 @@
 /* 띠배너============================================================ */
 #wrap header .line_bnr {
     background: #000; 
-    width: 100%; position: absolute; top: 0; left: 0; z-index: 10;
+    width: 100%; position: relative; top: 0; left: 0; z-index: 10;
 }
 #wrap header .line_bnr .container {
     max-width: 1860px; min-width: 430px;  padding: 0; margin: 0 auto; position: relative; height: 35px;
@@ -18,13 +18,14 @@
 #wrap header .line_bnr .container div a img {width: 100%;}
 
 /* 내비============================================================ */
-#wrap header nav {width: 100%;position: absolute; top: 35px; left: 0; z-index: 10;}
+#wrap header nav {width: 100%; position: absolute; z-index: 10;}
 #wrap header nav .container {
     max-width: 1860px; min-width: 430px;  padding: 0; margin: 0 auto; position: relative; height: 80px;
-    display: flex; justify-content: space-between; align-items: center;
+    display: flex; justify-content: space-between; align-items: center; background-color:
 }
 #wrap header nav .container .left {display: flex; gap: 10px;}
 #wrap header nav .container .left a {color: #fff; text-transform: capitalize; font-size: 1.125rem;}
+#wrap header nav .container .left a:last-of-type {display: none;}
 #wrap header nav .container h1 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 #wrap header nav .container h1 a {}
 #wrap header nav .container h1 a img {}

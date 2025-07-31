@@ -1,26 +1,157 @@
 @media screen and (max-width:430px) {
+    /* 띠배너========================================================================= */
+    #wrap header .line_bnr .container {height: 25px; width: 100%; padding: 0 15px;}
+    #wrap header .line_bnr .container p {font-size: 0.75rem; text-wrap: nowrap;}
+    
     /* 헤더========================================================================= */
+    #wrap header nav .container {height: 40px; padding: 0 15px;}
+    #wrap header nav .container .left a {display: none;}
+    #wrap header nav .container .left a:last-of-type {display: block;}
+    #wrap header nav .container h1 {display: none;}
+    #wrap header nav .container .right {display: flex; gap: 7px;}
+    #wrap header nav .container .right a {font-size: 0.75rem;}
+
+    /* 영상========================================================================= */
+    #wrap header .row1 .container {height: 430px;}
+    #wrap header .row1 .container .video {height: 100%; width: 100%;}
+    #wrap header .row1 .container .video video {object-fit: cover;  width: 100%; height: 100%;}
+    #wrap header .row1 .container .txt h1 {font-size: 1.25rem; text-wrap: nowrap;}
+    #wrap header .row1 .container .txt {gap: 20px;}
+    #wrap header .row1 .container .txt .btn {width: 113px; height: 32px; display: flex;}
+    #wrap header .row1 .container .txt .btn a {font-size: 0.75rem; line-height: 32px;}
 
     /* 콜렉션========================================================================= */
+    #wrap main .row2 .container {padding: 40px 15px; gap: 20px;}
+    #wrap main .row2 .container .top {gap: 10px;}
+    #wrap main .row2 .container .top p {font-size: 0.75rem;}
+    #wrap main .row2 .container .top h1 {width: 50%;}
+    #wrap main .row2 .container .top h1 img {width: 100%;}
+    #wrap main .row2 .container .contents #new_product {margin-bottom: 20px;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product {width: calc((100% / 3) - 10px); gap: 10px;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product > a {height: 180px; width: 100%;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product > a img {width: 70%;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product:last-of-type {display: none;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt {width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; gap: 5px;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt a {font-size: 0.75rem;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price {display: grid; grid-template-columns: 1fr;}
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price em,
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price span,
+    #wrap main .row2 .container .contents #new_product .swiper-wrapper .swiper-slide .product .txt .price del {font-size: 0.75rem;}
+    #wrap main .row2 .swiper-controls {gap: 10px;}
+    #wrap main .row2 .swiper-controls * {font-size: 0.75rem;}
+    #wrap main .row2 .swiper-controls .swiper-scrollbar {width: 70%;}
 
     /* 광고========================================================================= */
+    #wrap main .ad .container {padding: 40px 0; gap: 10px;}
+    #wrap main .ad .container #ad_bnr {height: 62.7px; background-color: yellow;}
+    #wrap main .ad .container #ad_bnr .swiper-slide {height: auto;}
+    #wrap main .ad .container #ad_bnr .swiper-slide img {width: 100%;}
+    #wrap main .ad .container .swiper-button-prev,
+    #wrap main .ad .container .swiper-button-next {color: #ffffff; width: 20px;}
+    .swiper {--swiper-navigation-size: 16px;}
+    #wrap main .ad .swiper-controls * {font-size: 0.75rem;}
+    #wrap main .ad .swiper-controls {gap: 10px; width: 80%; height: 30px; bottom: 0px; margin: 0 auto;}
+    #wrap main .ad .swiper-controls .pagination_deco {gap: 5px; width: 16%;}
 
     /* 신상========================================================================= */
+    #wrap main .new .container {padding: 40px 15px; gap: 20px;}
+    #wrap main .new .container .title {gap: 10px;}
+    #wrap main .new .container .title p {font-size: 0.75rem;}
+    #wrap main .new .container .title h1 {width: 50%;}
+    #wrap main .new .container .title h1 img {width: 100%;}
+    #wrap main .new .container .contents {display: grid; gap: 15px; grid-template-columns: 1fr; width: 100%;}
+    #wrap main .new .container .contents .left {width: 100%;}
+    #wrap main .new .container .contents .left img {width: 100%;}
+    #wrap main .new .container .contents .right {grid-template-columns: 1fr 1fr; width: 100%; gap: 20px 10px;}
+    #wrap main .new .container .contents .right .product {width: 100%; height: auto; gap: 5px;}
+    #wrap main .new .container .contents .right .product a {width: 100%;}
+    #wrap main .new .container .contents .right .product a img {width: 100%;}
+    #wrap main .new .container .contents .right .product:nth-of-type(8),
+    #wrap main .new .container .contents .right .product:nth-of-type(7),
+    #wrap main .new .container .contents .right .product:nth-of-type(6),
+    #wrap main .new .container .contents .right .product:nth-of-type(5) {display: none;}
+    #wrap main .new .container .contents .right .product .txt {gap: 5px;}
+    #wrap main .new .container .contents .right .product .txt a {font-size: 0.75rem;}
+    #wrap main .new .container .contents .right .product .txt .price em {font-size: 0.75rem;}
+    #wrap main .new .container .contents .right .product .txt .price span {font-size: 0.75rem;}
+
 
     /* 세일========================================================================= */
+    #wrap main .row3 .container {padding: 40px 0px 40px;display: grid; grid-template-columns: 1fr;}
+    #wrap main .row3 .container > a {height: 430px; gap: 20px;}
+    #wrap main .row3 .container > a em {font-size: 1.25rem;}
+    #wrap main .row3 .container > a span {font-size: 0.75rem; padding: 7px 20px;}
 
     /* 콜라보========================================================================= */
+    #wrap main .row4 .container {padding: 40px 15px 40px; flex-flow: column nowrap; width: 100%; gap: 15px; position: relative;}
+    #wrap main .row4 .container .left {gap: 10px; width: 100%; height: auto; width: 100%; align-items: center;}
+    #wrap main .row4 .container .left .title {gap: 10px; align-items: center;}
+    #wrap main .row4 .container .left p {font-size: 0.75rem; text-align: center;}
+    #wrap main .row4 .container .left h1 {display: none;}
+    #wrap main .row4 .container .left h1:last-of-type {display: block;}
+    #wrap main .row4 .container .left a {padding: 10px 25px; font-size: 0.75rem; position: absolute; bottom: 0;}
+    #wrap main .row4 .container .right {width: 100%;}
+    #wrap main .row4 .container .right #collabor {position: relative; width: 100%; height: auto; }
+    #wrap main .row4 .container .right #collabor .swiper-wrapper {width: 100%; padding: 0; overflow: visible;}
+    #wrap main .row4 .container .right #collabor .swiper-wrapper .swiper-slide {width: 100%;}
+    #wrap main .row4 .container .right #collabor .swiper-wrapper .swiper-slide a img {width: 100%;}
+    #wrap main .row4 .swiper-controls {display: none;}
+    
 
     /* 브랜드 소개========================================================================= */
+    #wrap main .row5 .container {padding: 40px 0;}
+    #wrap main .row5 .container a {height: 215px; width: 100%;}
+    #wrap main .row5 .container a em {font-size: 0.875rem;}
 
     /* 가맹사업========================================================================= */
+    #wrap main .row6 .container {padding: 40px 15px; flex-flow: column nowrap; gap: 15px;}
+    #wrap main .row6 .container .left {width: 100%; gap: 20px;}
+    #wrap main .row6 .container .left .top {gap: 10px;}
+    #wrap main .row6 .container .left .top h1 {font-size: 0.875rem;}
+    #wrap main .row6 .container .left .top p {font-size: 0.75rem;}
+    #wrap main .row6 .container .left .bottom {gap: 10px;}
+    #wrap main .row6 .container .left .bottom a {font-size: 0.75rem; padding: 10px 25px;}
+    #wrap main .row6 .container .left .bottom span {font-size: 0.75rem;}
+    #wrap main .row6 .container .right {width: 100%; height: 400px; background-size: cover; background-position: center;}
 
     /* 인스타========================================================================= */
+    #wrap main .row7 .container {padding: 40px 0px; gap: 20px;}
+    #wrap main .row7 .container .title {gap: 10px;}
+    #wrap main .row7 .container .title a {font-size: 0.75rem;}
+    #wrap main .row7 .container .title h1 {width: 25%;}
+    #wrap main .row7 .container .title h1 img {width: 100%;}
+    #wrap main .row7 .container .contents {height: auto;}
 
     /* 혜택========================================================================= */
+    #wrap main .row8 .container {padding: 40px 15px; display: grid; grid-template-columns: 1fr; gap: 10px;}
+    #wrap main .row8 .container > a {width: 70%;  margin: 0 auto; padding: 20px; justify-content: space-between;}
+    #wrap main .row8 .container > a * {font-size: 0.75rem;}
 
     /* 공지사항========================================================================= */
+    #wrap main .row9 .container {padding: 40px 15px;}
+    #wrap main .row9 .container .left {gap: 5px;}
+    #wrap main .row9 .container .left em {font-size: 0.875rem;}
+    #wrap main .row9 .container .left img {width: 12px;}
+    #wrap main .row9 .container .left a {font-size: 0.75rem;}
+    #wrap main .row9 .container > a {font-size: 0.75rem;}
 
     /* 풋터========================================================================= */
+    #wrap footer .container {padding: 40px 15px; gap: 15px;}
+    #wrap footer .container .top {width: 100%; gap: 15px;}
+    #wrap footer .container .top .row1 {gap: 10px;}
+    #wrap footer .container .top .row1 .logo_menu {flex-flow: column nowrap; justify-content: flex-start; align-items: flex-start; gap: 10px;}
+    #wrap footer .container .top .row1 .logo_menu p {gap: 10px;}
+    #wrap footer .container .top .row1 .logo_menu p a {font-size: 0.75rem;}
+    #wrap footer .container .top .row1 .pri {gap: 10px;}
+    #wrap footer .container .top .row1 .pri a {font-size: 0.75rem;}
+    #wrap footer .container .top .row1 .pri a::after {display: none;}
+    #wrap footer .container .top .row2 {width: 100%; gap: 5px;}
+    #wrap footer .container .top .row2 p {flex-flow: column nowrap; align-items: flex-start; gap: 5px;}
+    #wrap footer .container .top .row2 p span {font-size: 0.75rem;}
+    #wrap footer .container .top .row2 p span::after {display: none;}
+    #wrap footer .container .top .row2 p a {font-size: 0.75rem;}
+    #wrap footer .container .row3 {width: 100%; align-items: flex-start;}
+    #wrap footer .container .row3 p a img {width: 12px;}
+    #wrap footer .container > p {font-size: 1.35rem; text-wrap: nowrap;}
 
 }

@@ -6,6 +6,11 @@ const follwUs = new Swiper ('#insta',{
     //slidesPerGroup: 1,  // 슬라이드를 그룹화하여 한 번에 1개씩 이동
     speed:4000,
     //loopAdditionalSlides: 6,
+    breakpoints: {
+        430: {
+            slidesPerView: 3,  // 430px 이하에서 1개씩 표시
+        }
+    },
 })
 
 const newProduct = new Swiper ('#new_product',{
@@ -44,13 +49,20 @@ const adBnr = new Swiper ('#ad_bnr',{
 
 const collabor = new Swiper ('#collabor',{
     loop:true,
-    spaceBetween:30,slidesPerView : 6,
+    spaceBetween:30,
+    slidesPerView : 6,
     scrollbar:{
-        el:'#collabor + .swiper-controls .swiper-scrollbar'
+        el:'#collabor ~ .swiper-controls .swiper-scrollbar'
     },
     pagination: {
-        el: "#collabor + .swiper-controls .pagination_deco .swiper-pagination",
+        el: "#collabor ~ .swiper-controls .pagination_deco .swiper-pagination",
         type: "fraction",
         clickable: true,
+    },
+    breakpoints: {
+        430: {
+            slidesPerView : 6,
+            spaceBetween:5,
+        }
     },
 })
