@@ -121,6 +121,8 @@
     #wrap main .row7 .container .title h1 {width: 25%;}
     #wrap main .row7 .container .title h1 img {width: 100%;}
     #wrap main .row7 .container .contents {height: auto;}
+     #wrap main .row7 .container .swiper-slide {width: calc(100% / 3);  /* 화면이 430px 이하일 때 3개 슬라이드 기준으로 */}}
+
 
     /* 혜택========================================================================= */
     #wrap main .row8 .container {padding: 40px 15px; display: grid; grid-template-columns: 1fr; gap: 10px;}

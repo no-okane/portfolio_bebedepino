@@ -197,12 +197,12 @@ body * {transition: all 0.3s; overflow: hidden;}
 #wrap main .row7 .container .title a {color: #888888;}
 #wrap main .row7 .container .title h1 {}
 #wrap main .row7 .container .title h1 img {}
-#wrap main .row7 .container .contents {width: 100%; height: 460px;}
+#wrap main .row7 .container .contents {width: 100%; /* height: 460px; */}
 #wrap main .row7 .container .contents * {overflow: visible;}
 #wrap main .row7 .container .swiper {}
 #wrap main .row7 .container .swiper-wrapper {transition-timing-function: linear;}
-#wrap main .row7 .container .swiper-wrapper .swiper-slide {}
-#wrap main .row7 .container .swiper-wrapper .swiper-slide img {width: 100%;}
+#wrap main .row7 .container .swiper-wrapper .swiper-slide {width: calc(100% / 6);}
+#wrap main .row7 .container .swiper-wrapper .swiper-slide img {width: 100%; object-fit: cover;}
 
 /* 혜택========================================================================= */
 #wrap main .row8 {}
